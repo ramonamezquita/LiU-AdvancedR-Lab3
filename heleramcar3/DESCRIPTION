@@ -4,10 +4,10 @@ Title: Euclidean and Dijkstra algorithms for Computar Lab 3.
 Version: 0.0.0.9000
 Date: 2024-09-22
 Authors@R: c(
-    person("Helena", "LLorens", email = "hllor282@student.liu.se", role = c("aut", "cre")),
-    person("Carmen", "Rodríguez", email = "carro162@student.liu.se.co", role = "aut"),
-    person("Ramón", "Amézquita", role = "aut"))
-Description: Implementation of Euclidean and Dijkstra algorithms LiU Advanced R course in Linköping University.
+    person("Helena", "Llorens", email = "hllor282@student.liu.se", role = c("aut", "cre")),
+    person("Carmen", "Rodríguez", email = "carro162@student.liu.se", role = "aut"),
+    person("Ramón", "Amézquita", email = "ramam120@student.liu.se", role = "aut"))
+Description: Implementation of Euclidean and Dijkstra algorithms for Advanced R course in Linköping University.
 RoxygenNote: 7.3.2
 License: `use_mit_license()`
 Encoding: UTF-8
