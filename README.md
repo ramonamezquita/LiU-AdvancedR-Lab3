@@ -4,6 +4,6 @@ R package for LiU Advanced R course in Linköping University
 
 # Names - Student Id
 
-Helena LLorens - hllor282
-Ramón Amézquita - ramam120
-Carmen Rodríguez - carro162
+* Helena LLorens - hllor282
+* Ramón Amézquita - ramam120
+* Carmen Rodríguez - carro162

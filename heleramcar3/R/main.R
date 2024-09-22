@@ -10,7 +10,7 @@ euclidean <- function(a, b){
   }
   
   while(r2 != 0){
-    ri <- r2 %% r1
+    ri <- r1 %% r2
     r1 <- r2
     r2 <- ri
   }
