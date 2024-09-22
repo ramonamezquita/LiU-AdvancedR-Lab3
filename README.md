@@ -1,6 +1,6 @@
 # LiU-AdvancedR-Lab3
 
-R package for LiU Advanced R course in Linköping University
+Implementation of Euclidean and Dijkstra algorithms for Advanced R course in Linköping University.
 
 # Names - Student Id
 
