@@ -1,13 +1,14 @@
 Package: heleramcar3
 Type: Package
-Title: Our Awesome Lab 3 Package
-Version: 1.0
+Title: Euclidean and Dijkstra algorithms for Computar Lab 3.
+Version: 0.0.0.9000
 Date: 2024-09-22
-Author: Helena LLorens [aut, cre], 
-  Carmen Rodríguez [aut, cre],
-  Ramón Amézquita [aut]
-Maintainer: Helena LLorens <hllor282@student.liu.se>
-Description: Implementaiton of Euclidean and Dijkstra algorithms.
+Authors@R: c(
+    person("Helena", "LLorens", email = "hllor282@student.liu.se", role = c("aut", "cre")),
+    person("Carmen", "Rodríguez", email = "carro162@student.liu.se.co", role = "aut"),
+    person("Ramón", "Amézquita", role = "aut"))
+Description: Implementation of Euclidean and Dijkstra algorithms LiU Advanced R course in Linköping University.
 RoxygenNote: 7.3.2
-License: MIT License
+License: `use_mit_license()`
 Encoding: UTF-8
+URL: https://github.com/ramonamezquita/LiU-AdvancedR-Lab3
