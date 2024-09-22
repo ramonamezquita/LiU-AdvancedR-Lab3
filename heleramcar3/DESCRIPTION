@@ -1,0 +1,13 @@
+Package: heleramcar3
+Type: Package
+Title: Our Awesome Lab 3 Package
+Version: 1.0
+Date: 2024-09-22
+Author: Helena LLorens [aut, cre], 
+  Carmen Rodríguez [aut, cre],
+  Ramón Amézquita [aut]
+Maintainer: Helena LLorens <hllor282@student.liu.se>
+Description: Implementaiton of Euclidean and Dijkstra algorithms.
+RoxygenNote: 7.3.2
+License: MIT License
+Encoding: UTF-8
