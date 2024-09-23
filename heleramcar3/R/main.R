@@ -42,25 +42,33 @@ euclidean <- function(a, b){
 #' dijkstra(wiki_graph, 1)
 #' dijkstra(wiki_graph, 3)
 #' @references https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-dijkstra <- function(graph, init_node){
-  nodes <- unique(c(graph$v1, graph$v2))
-  distances <- rep(Inf, length(nodes))
-  distances[which(nodes == init_node)] <- 0
-  visited <- rep(FALSE,length(nodes))
+dijkstra<- function(graph, init_node){
+  stopifnot(is.numeric(init_node), init_node %in% graph$v1)
+  stopifnot(is.data.frame(graph))
   
-  while(TRUE){
-    current_node <- which.min(distances[!visited])
-    if (is.infinite(distances[current_node])) break
-    visited[current_node] <- TRUE
-    
-    neighbors <- graph[graph$v1 == nodes[current_node], ]
-    for (i in 1:nrow(neighbors)){
-      neighbors_index<-which(nodes== neighbors$v2[i])
-      if(!visited[neighbors_index]){
-        new_distance<- distances[current_node] +neighbors$w[i]
-        if (new_distance < distances[neighbors_index]){
-          distances[neighbors_index]<- new_distance
-        }
+  nodes<- unique(c(graph$v1, graph$v2))
+  distances<-rep(Inf, length(nodes)) 
+  distances[which(nodes == init_node)]<-0 
+  
+  for(i in graph$v2[graph$v1 == init_node]){ 
+    posiciones<- which(graph$v1==init_node & graph$v2==i)
+    distances[which(nodes==i)]<- graph$w[posiciones] 
+  }
+  
+  visited<-rep(FALSE,length(nodes))
+  visited[which ( nodes == init_node)]<-TRUE
+  
+  while(any(visited== FALSE)){
+    j<-which.min(distances[visited==FALSE])
+    current_node<-nodes[which(visited==FALSE)[j]]
+    visited[which(nodes== current_node)]<-TRUE
+    neighbors<-graph$v2[graph$v1 == current_node]
+    for (x in neighbors){
+      posicionesNEW<- which(graph$v1==current_node & graph$v2==x)
+      weight<- graph$w[posicionesNEW]
+      new_distance<- distances[which(nodes==current_node)]+weight 
+      if(new_distance<distances[which(nodes==x)]){
+        distances[which(nodes==x)]<-new_distance
       }
     }
   }
