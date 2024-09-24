@@ -1,11 +1,14 @@
 Package: heleramcar3
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Euclidean and Dijkstra algorithms for Computar Lab 3
+Version: 0.0.0.9000
+Date: 2024-09-22
+Authors@R: c(
+    person("Helena", "Llorens", email = "hllor282@student.liu.se", role = c("aut", "cre")),
+    person("Carmen", "Rodríguez", email = "carro162@student.liu.se", role = "aut"),
+    person("Ramón", "Amézquita", email = "ramam120@student.liu.se", role = "aut"))
+Description: Implementation of Euclidean and Dijkstra algorithms for Advanced R course in Linköping University.
+RoxygenNote: 7.3.2
 Encoding: UTF-8
-LazyData: true
+URL: https://github.com/ramonamezquita/LiU-AdvancedR-Lab3
+License: MIT + file LICENSE
