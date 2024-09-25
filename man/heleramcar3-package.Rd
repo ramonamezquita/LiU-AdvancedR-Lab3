@@ -11,7 +11,7 @@ Implementation of Euclidean and Dijkstra algorithms for Advanced R course in Lin
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ramonamezquita/LiU-AdvancedR-Lab3}
+  \item \url{https://github.com/ramonamezquita/heleramcar3}
 }
 
 }
