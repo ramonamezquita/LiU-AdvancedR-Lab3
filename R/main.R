@@ -24,7 +24,7 @@ euclidean <- function(a, b){
     r2 <- ri
   }
 
-  return(r1)
+  return(abs(r1))
 }
 
 
