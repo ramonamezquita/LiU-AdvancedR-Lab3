@@ -7,6 +7,7 @@
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
 #' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
+#' @export
 euclidean <- function(a, b){
   stopifnot(is.numeric(a), is.numeric(b))
 
@@ -42,6 +43,7 @@ euclidean <- function(a, b){
 #' dijkstra(wiki_graph, 1)
 #' dijkstra(wiki_graph, 3)
 #' @references https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+#' @export
 dijkstra<- function(graph, init_node){
 
 
